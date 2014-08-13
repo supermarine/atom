@@ -307,10 +307,22 @@ class qtPackageExtractorMETSArchivematicaDIP extends qtPackageExtractorBase
 
       foreach ($logicalStructMap[0]->xpath('.//m:div') as $item)
       {
-        if (null === $lodName = (string)$item['TYPE'])
+        // DMD mapping
+        $dmdId = (string)$item['DMDID'];
+        $fileId = (string)$item->fptr['FILEID'];
+
+        if (strlen($fileId) > 0 && strlen($dmdId) > 0)
+        {
+          $this->dmdMapping[$fileId] = $dmdId;
+        }
+
+        // LOD mapping
+        if (null === $item['TYPE'])
         {
           continue;
         }
+
+        $lodName = (string)$item['TYPE'];
 
         $sql  = 'SELECT
                     term.id';
@@ -328,14 +340,6 @@ class qtPackageExtractorMETSArchivematicaDIP extends qtPackageExtractorBase
         {
           // If a level of description is not found, the upload process is stoped
           throw new sfException('Level of description not found: '.$lodName);
-        }
-
-        $dmdId = (string)$item['DMDID'];
-        $fileId = (string)$item->fptr['FILEID'];
-
-        if (strlen($fileId) > 0 && strlen($dmdId) > 0)
-        {
-          $this->dmdMapping[$fileId] = $dmdId;
         }
       }
     }
