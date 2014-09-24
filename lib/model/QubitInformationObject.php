@@ -1311,15 +1311,6 @@ class QubitInformationObject extends BaseInformationObject
       return;
     }
 
-    // Information object must be saved before.
-    // The id is needed to save the events and relations when
-    // they are created instead of when the information object is saved
-    // to be able to execute raw queries over them (in QubitActor::getByNameAndRepositoryId)
-    if (!isset($this->id))
-    {
-      $this->save();
-    }
-
     // Get actor or create a new one. If the actor exists the data is not overwritten
     if (null === $actor = QubitActor::getByNameAndRepositoryId($name, $this->repositoryId))
     {
