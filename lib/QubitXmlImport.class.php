@@ -309,6 +309,9 @@ class QubitXmlImport
       if ($parent_obj !== NULL &&
         substr_compare($parent_obj->identifier, 'VM001', 0, 5) === 0) {
         $parentId = 168614;
+      } elseif ($parent_obj !== NULL &&
+        substr_compare($parent_obj->identifier, 'VM094', 0, 5) === 0) {
+        $parentId = 47392;
       }
 
       unset($parentNodes);
