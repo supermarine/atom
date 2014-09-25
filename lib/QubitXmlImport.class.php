@@ -299,6 +299,18 @@ class QubitXmlImport
     {
       // parent ID comes from last node in the list because XPath forces forward document order
       $parentId = $parentNodes->item($parentNodes->length - 1)->getAttribute('xml:id');
+
+      // HACK - allow info objects parented to the fake VM001 fonds,
+      // like "VM001,S00", to attach to the pre-existing VM001 object.
+      // This is used for an import where new series are being added to
+      // that fonds.
+
+      $parent_obj = QubitInformationObject::getById($parentId);
+      if ($parent_obj !== NULL &&
+        substr_compare($parent_obj->identifier, 'VM001', 0, 5) === 0) {
+        $parentId = 168614;
+      }
+
       unset($parentNodes);
 
       if (!empty($parentId) && is_callable(array($currentObject, 'setParentId')))
