@@ -306,12 +306,32 @@ class QubitXmlImport
       // that fonds.
 
       $parent_obj = QubitInformationObject::getById($parentId);
-      if ($parent_obj !== NULL &&
-        substr_compare($parent_obj->identifier, 'VM001', 0, 5) === 0) {
-        $parentId = 168614;
-      } elseif ($parent_obj !== NULL &&
-        substr_compare($parent_obj->identifier, 'VM094', 0, 5) === 0) {
-        $parentId = 47392;
+      if ($parent_obj !== NULL) {
+        $identifier = substr($parent_obj->identifier, 0, 5);
+        switch ($identifier) {
+          case 'VM001':
+            $parentId = 168614;
+            break;
+
+          case 'VM094':
+            $parentId = 47392;
+            break;
+
+          case 'Y':
+            if ($parent_obj->title === "Photographies. - [18-]-1995") {
+              $parentId = 47424;
+            }
+            break;
+
+          case '1':
+            if ($parent_obj->title === "Studio multimédia . - [18-]-1995") {
+              $parentId = 47426;
+            }
+            break;
+          
+          default:
+            break;
+        }
       }
 
       unset($parentNodes);
