@@ -46,6 +46,7 @@ EOF;
 
   protected function execute($arguments = array(), $options = array())
   {
+    $sf_context = sfContext::createInstance($this->configuration);
     $databaseManager = new sfDatabaseManager($this->configuration);
     $conn = $databaseManager->getDatabase('propel')->getConnection();
 
