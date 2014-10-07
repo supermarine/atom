@@ -250,6 +250,8 @@ class QubitXmlImport
 
     unset($this->schemaMap['processXSLT']);
 
+    $to_delete = array();
+
     // go through schema map and populate objects/properties
     foreach ($this->schemaMap as $name => $mapping)
     {
@@ -277,7 +279,34 @@ class QubitXmlImport
 
         // use DOM to populate object
         $this->populateObject($domNode, $importDOM, $mapping, $currentObject, $importSchema);
+
+        // These identifiers indicate a placeholder level of description;
+        // these objects shouldn't actually get saved, so ignore them.
+        // Their children are rerouted elsewhere.
+        $identifier = substr($currentObject->identifier, 0, 5);
+        switch($identifier) {
+          case 'VM001':
+          case 'VM094':
+            array_push($to_delete, $currentObject);
+            break;
+
+          case 'Y':
+            if ($currentObject->title === "Photographies. - [18-]-1995") {
+              array_push($to_delete, $currentObject);
+            }
+            break;
+
+          case '1':
+            if ($currentObject->title === "Studio multimédia . - [18-]-1995") {
+              array_push($to_delete, $currentObject);
+            }
+            break;
+        }
       }
+    }
+
+    foreach ($to_delete as $io) {
+      $io->delete();
     }
 
     return $this;
