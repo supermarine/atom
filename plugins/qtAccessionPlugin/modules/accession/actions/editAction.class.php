@@ -82,6 +82,10 @@ class AccessionEditAction extends DefaultEditAction
     $this->relatedDonorComponent->resource = $this->resource;
     $this->relatedDonorComponent->execute($this->request);
 
+    $this->eventComponent = new sfIsadPluginEventComponent($this->context, 'sfIsadPlugin', 'event');
+    $this->eventComponent->resource = $this->resource;
+    $this->eventComponent->execute($this->request);
+
     $this->rightEditComponent = new RightEditComponent($this->context, 'right', 'edit');
     $this->rightEditComponent->resource = $this->resource;
     $this->rightEditComponent->execute($this->request);
@@ -360,6 +364,8 @@ class AccessionEditAction extends DefaultEditAction
       if ($this->form->isValid())
       {
         $this->relatedDonorComponent->processForm();
+
+        $this->eventComponent->processForm();
 
         $this->rightEditComponent->processForm();
 
