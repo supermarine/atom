@@ -210,6 +210,8 @@ class arDacsPluginEditAction extends InformationObjectEditAction
 
     $this->notesComponent->processForm();
 
+    $this->specializedNotesComponent->processForm();
+
     $this->archivistsNotesComponent->processForm();
 
     return parent::processForm();
