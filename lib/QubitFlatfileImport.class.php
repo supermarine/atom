@@ -1068,7 +1068,7 @@ class QubitFlatfileImport
           $actorOptions['history'] = $options['actorHistory'];
         }
 
-        if (isset($this->object->repositoryId))
+        if (property_exists($this->object, 'repositoryId') && isset($this->object->repositoryId))
         {
           $actorOptions['repositoryId'] = $this->object->repositoryId;
         }
