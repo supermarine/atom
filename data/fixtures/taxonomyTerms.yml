@@ -5531,221 +5531,265 @@ QubitTerm:
     source_culture: en
     name:
       en: 'Advertisements'
+      pt: 'Anúncios publicitários'
   QubitTerm_genre_albums:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Albums'
+      pt: 'Álbuns'
   QubitTerm_genre_architecture:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Architecture'
+      pt: 'Arquitetura'
   QubitTerm_genre_blank_forms:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Blank forms'
+      pt: 'Formulários em branco'
   QubitTerm_genre_books:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Books'
+      pt: 'Livros'
   QubitTerm_genre_broadsides:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Broadsides'
+      pt: 'Bordos'
   QubitTerm_genre_cartoons_commentary:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Cartoons (Commentary)'
+      pt: 'Cartoons (Comentário)'
   QubitTerm_genre_catalogs:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Catalogs'
+      pt: 'Catálogos'
   QubitTerm_genre_cityscapes:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Cityscapes'
+      pt: 'Paisagens urbanas'
   QubitTerm_genre_clippings:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Clippings'
+      pt: 'Recortes'
   QubitTerm_genre_correspondence:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Correspondence'
+      pt: 'Correspondência'
   QubitTerm_genre_diaries:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Diaries'
+      pt: 'Diários'
   QubitTerm_genre_drawings:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Drawings'
+      pt: 'Desenhos'
   QubitTerm_genre_ephemera:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Ephemera'
+      pt: 'Éfemera'
   QubitTerm_genre_essays:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Essays'
+      pt: 'Ensaios'
   QubitTerm_genre_ethnography:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Ethnography'
+      pt: 'Etnografia'
   QubitTerm_genre_fieldnotes:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Fieldnotes'
+      pt: 'Notas de campo'
   QubitTerm_genre_illustrations:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Illustrations'
+      pt: 'Ilustrações'
   QubitTerm_genre_interviews:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Interviews'
+      pt: 'Entrevistas'
   QubitTerm_genre_landscapes:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Landscapes'
+      pt: 'Paisagens'
   QubitTerm_genre_leaflets:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Leaflets'
+      pt: 'Folhetos'
   QubitTerm_genre_manuscripts:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Manuscripts'
+      pt: 'Manuscritos'
   QubitTerm_genre_maps:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Maps'
+      pt: 'Mapas'
   QubitTerm_genre_misc_documents:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Miscellaneous Documents'
+      pt: 'Documentos diversos'
   QubitTerm_genre_motion_pictures:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Motion Pictures'
+      pt: 'Imagens em movimento'
   QubitTerm_genre_music:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Music'
+      pt: 'Música'
   QubitTerm_genre_narratives:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Narratives'
+      pt: 'Narrativas'
   QubitTerm_genre_paintings:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Paintings'
+      pt: 'Pinturas'
   QubitTerm_genre_pamphlets:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Pamphlets'
+      pt: 'Panfletos'
   QubitTerm_genre_periodicals:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Periodicals'
+      pt: 'Periódicos'
   QubitTerm_genre_petitions:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Petitions'
+      pt: 'Petições'
   QubitTerm_genre_photographs:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Photographs'
+      pt: 'Fotografias'
   QubitTerm_genre_physical_objects:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Physical Objects'
+      pt: 'Objetos físicos'
   QubitTerm_genre_poetry:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Poetry'
+      pt: 'Poesia'
   QubitTerm_genre_portraits:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Portraits'
+      pt: 'Retratos'
   QubitTerm_genre_postcards:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Postcards'
+      pt: 'Postais'
   QubitTerm_genre_posters:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Posters'
+      pt: 'Cartazes'
   QubitTerm_genre_prints:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Prints'
+      pt: 'Impressões'
   QubitTerm_genre_programs:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Programs'
+      pt: 'Programas'
   QubitTerm_genre_recording_logs:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Recording logs'
+      pt: 'Registos gravados'
   QubitTerm_genre_scores:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Scores'
+      pt: 'Pontuações'
   QubitTerm_genre_sheet_music:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Sheet Music'
+      pt: 'Partitura'
   QubitTerm_genre_timetables:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Timetables'
+      pt: 'Horários'
   QubitTerm_genre_transcriptions:
     taxonomy_id: QubitTaxonomy_genre
     source_culture: en
     name:
       en: 'Transcriptions'
+      pt: 'Transcrições'
 QubitNote:
   QubitNote_1:
     object_id: QubitTerm_111
