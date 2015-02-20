@@ -110,7 +110,7 @@ QubitSetting:
       ka: 'ავტორიტეტული ჩანაწერი'
       nl: 'Geauthoriseerde beschrijving'
       pl: 'Hasło wzorcowe'
-      pt: 'Registro de autoridade'
+      pt: 'Registo de autoridade'
       pt_BR: 'Registro de autoridade'
       sl: 'Zapis o ustvarjalcu'
       th: รายการควบคุม
@@ -252,7 +252,7 @@ QubitSetting:
       ka: ფონდები
       nl: Archief
       pl: Zespoły
-      pt: Fundos
+      pt: Arquivo
       pt_BR: Fundos
       sl: Fondi
       th: เอกสารระดับกลุ่ม
@@ -276,7 +276,7 @@ QubitSetting:
       ka: ანაბრები
       nl: Bestanden
       pl: 'Zasoby posiadane'
-      pt: Acervo
+      pt: Acervos documentais
       pt_BR: Acervo
       sl: 'Arhivsko gradivo'
       th: สถานที่เก็บเอกสาร
@@ -440,6 +440,7 @@ QubitSetting:
       fr: 'Affiner les résultats par :'
       gl: 'Refinar os resultados por:'
       it: 'Restringi i risultati per:'
+      pt: 'Limite os seus resultados por:'
       pt_BR: 'Limite seus resultados por:'
       sl: 'Omejite rezultate:'
       vi: 'Thu hẹp kết quả của bạn bằng cách'
